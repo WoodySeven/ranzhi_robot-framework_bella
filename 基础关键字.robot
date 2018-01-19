@@ -35,3 +35,12 @@ ${base_url}       http://localhost/ranzhi/www
 
 进入联系人页面
     Click Element    xpath=//*[@id="mainNavbar"]/div[2]/ul/li[5]/a
+
+costomer_page
+    Click Element    xpath=//*[@id="mainNavbar"]/div[2]/ul/li[4]/a
+
+order_page
+    Click Element    xpath=//*[@id="mainNavbar"]/div[2]/ul/li[2]/a
+
+contract_page
+    Click Element    xpath=//*[@id="mainNavbar"]/div[2]/ul/li[3]/a

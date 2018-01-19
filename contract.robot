@@ -4,16 +4,18 @@ Resource          基础关键字.robot
 Resource          业务关键字.robot
 
 *** Test Cases ***
-新增联系人
+create_contract
     管理员登陆成功    admin    123456    退出
     进入frame
-    进入联系人页面
-    添加联系人输入数据保存成功
+    contract_page
+    create_contract
     关闭浏览器
 
-删除联系人
+dellete_contract
     管理员登陆成功    admin    123456    退出
     进入frame
-    进入联系人页面
-    删除联系人
+    contract_page
+    Click Element    xpath=//*[@id="contractList"]/tbody/tr[1]/td[11]/div/a
+    Click Element    xpath=//*[@id="contractList"]/tbody/tr[1]/td[11]/div/ul/li[2]/a
+    Confirm Action
     关闭浏览器
